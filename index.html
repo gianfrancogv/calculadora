@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, ini0tial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <div id="calculadora">
+
+        <div id="visor"></div>
+        <div id="botones">
+            <button class="decimal">+/-</button>
+            <button class="numerico" onclick="presionarNumero(0)">0</button>
+            <button class="decimal" onclick="presionarDecimal()">,</button>
+            <button class="operador" onclick="presionarIgual()">=</button>
+            <button class="numerico" onclick="presionarNumero(1)">1</button>
+            <button class="numerico" onclick="presionarNumero(2)">2</button>
+            <button class="numerico" onclick="presionarNumero(3)">3</button>
+            <button class="operador" id="suma" onclick="presionarOperador(this.id)">+</button>
+            <button class="numerico" onclick="presionarNumero(4)">4</button>
+            <button class="numerico" onclick="presionarNumero(5)">5</button>
+            <button class="numerico" onclick="presionarNumero(6)">6</button>
+            <button class="operador" id="resta" onclick="presionarOperador(this.id)">-</button>
+            <button class="numerico" onclick="presionarNumero(7)">7</button>
+            <button class="numerico" onclick="presionarNumero(8)">8</button>
+            <button class="numerico" onclick="presionarNumero(9)">9</button>
+            <button class="operador" id="multiplicacion" onclick="presionarOperador(this.id)">x</button>
+            <button class="operador" id="porcentaje"    onclick="presionarOperador(this.id)">%</button>
+            <button class="borrar" onclick="borradoParcial()">CE</button>
+            <button class="borrar" onclick="borrarTodo()">C</button>
+            <button class="operador" id="division" onclick="presionarOperador(this.id)">/</button>
+        </div>
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
